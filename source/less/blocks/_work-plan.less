@@ -1,0 +1,34 @@
+.work-plan {
+  padding: 0 20px 49px 20px;
+}
+
+.work-plan__title {
+  .title();
+  font-size: 36px;
+  line-height: 40px;
+  .text-null();
+  margin-bottom: 40px;
+}
+
+.work-plan__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: @primary-green;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+}
+
+.work-plan__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.work-plan__description {
+  .text-null();
+}

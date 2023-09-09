@@ -1,0 +1,40 @@
+.hero__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-cat.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+}
+
+.hero__title {
+  max-width: 260px;
+  color: @white;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  .text-null();
+  padding-top: 27px;
+  margin-bottom: 25px;
+}
+
+.hero__description {
+  max-width: 280px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  .text-null();
+  margin-bottom: 29px;
+  color: @white;
+}
+
+.hero__link {
+  .link-null();
+  margin-top: 3px;
+  margin-bottom: 20px;
+}

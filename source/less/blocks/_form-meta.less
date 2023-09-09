@@ -1,0 +1,33 @@
+.form__meta-fieldset {
+  padding: 0 20px 11px;
+  border: none;
+  border-bottom: 1px @hr-gray solid;
+}
+
+.form__meta-input {
+  padding: 14px 15px 13px;
+  margin-bottom: 14px;
+  width: 100%;
+  .form-text();
+  border: 1px @input-gray solid;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__meta-input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.form__meta-label {
+  .form-text();
+  display: flex;
+  margin-right: 13px;
+  white-space: nowrap;
+}
+
+.form__meta-item {
+  display: flex;
+  align-items: baseline;
+}
