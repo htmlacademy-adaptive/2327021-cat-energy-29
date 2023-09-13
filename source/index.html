@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>Кэт энерджи</title>
     <link rel="icon" href="/source/favicon.svg" />
@@ -11,20 +12,22 @@
     <div class="page-wrapper">
       <header class="main-header">
         <div class="header-wrapper">
-          <a href="index.html" class="main-header__logo logo">
-            <img
-              class="logo__logo-image"
-              src="./img/icons/main-logo.svg"
-              alt="логотип"
-            />
-            <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
-              <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
-            </svg>
-          </a>
+          <div class="header-wrapper-basic">
+            <a href="index.html" class="main-header__logo logo">
+              <img
+                class="logo__logo-image"
+                src="./img/icons/main-logo.svg"
+                alt="логотип"
+              />
+              <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
+                <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
+              </svg>
+            </a>
+              <button class="header-toggle" type="button">
+                <span class="visually-hidden">открыть меню сайта</span>
+              </button>
+          </div>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">открыть меню сайта</span>
-            </button>
             <div class="main-nav__menu">
               <ul class="main-nav__list list-null">
                 <li class="main-nav__item">
