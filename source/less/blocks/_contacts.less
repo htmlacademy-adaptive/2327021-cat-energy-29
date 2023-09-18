@@ -1,0 +1,54 @@
+.contacts__text-container {
+  display: flex;
+  padding: 26px 20px;
+}
+
+.contacts__promo {
+  .text-null();
+  .title();
+  max-width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  max-width: 140px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts-color-wrapper {
+  background-color: @light-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__text-container {
+    display: flex;
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
+
+  .contacts__promo {
+    max-width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    max-width: 157px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .address-devider {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 400px;
+  }
+}

@@ -71,6 +71,8 @@
     display: block;
     content: "";
     background-image: url("../img/icons/plus.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
     width: 30px;
     height: 30px;
     position: relative;
@@ -86,4 +88,114 @@
   margin-bottom: 8px;
   font-size: 12px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 40px 30px 42px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .catalog__products-list {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .catalog__products-item {
+    min-width: 324px;
+    min-height: 511px;
+    padding: 8px 37px 39px;
+    border-bottom: none;
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .card__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 168px;
+    min-height: 200px;
+  }
+
+  .card .card__title {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 154px;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  .card .card__title-row {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 134px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      margin-top: 133px;
+      margin-bottom: 49px;
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+    }
+  }
+
+  .card__description-add {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 165px;
+    text-align: center;
+  }
+
+  .card__button {
+    margin-top: 33px;
+  }
+
+  .card .secondary-button {
+    background-color: @light-gray;
+    color: @primary-black;
+    margin-top: 81px;
+  }
+
+  .card__info-wrapper {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card__info-name {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px @border-gray solid;
+  }
+
+  .card__info-value {
+    font-size: 16px;
+    line-height: 16px;
+    display: grid;
+    justify-content: end;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px @border-gray solid;
+  }
 }

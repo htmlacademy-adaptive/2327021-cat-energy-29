@@ -28,10 +28,10 @@
               </button>
           </div>
           <nav class="main-nav">
-            <div class="main-nav__menu">
+            <div class="main-nav__menu-wrapper">
               <ul class="main-nav__list list-null">
                 <li class="main-nav__item">
-                  <a href="#no-scroll" class="main-nav__link main-nav__link--current">главная</a>
+                  <a href="#no-scroll" class="main-nav__link">главная</a>
                 </li>
                 <li class="main-nav__item">
                   <a href="catalog.html" class="main-nav__link">каталог продукции</a>
@@ -50,14 +50,16 @@
           <div class="hero__wrapper">
             <h1 class="hero__title">Функциональное питание для котов</h1>
             <p class="hero__description">Занялся собой? Займись котом!</p>
-            <img
-              class="hero__image"
-              src="./img/hero-image.png"
-              width="280"
-              height="270"
-              alt="изображение продукта в упаковке"
-            />
-            <a href="form.html" class="hero__link button">подобрать программу</a>
+            <div class="hero__link-wrapper">
+              <img
+                class="hero__image"
+                src="./img/hero-image.png"
+                width="280"
+                height="270"
+                alt="изображение продукта в упаковке"
+              />
+              <a href="form.html" class="hero__link button">подобрать программу</a>
+            </div>
           </div>
         </section>
         <section class="program-choice">
@@ -123,17 +125,19 @@
             Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
             этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <dl class="result__list list-null">
-            <div class="result__left-wrapper">
-              <dt>5 КГ</dt>
-              <dd>снижение веса</dd>
-            </div>
-            <div class="result__right-wrapper">
-              <dt>60 ДНЕЙ</dt>
-              <dd>затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="result__cost-text">Затраты на питание: 15 000 РУБ.</p>
+          <div class="result__cost-wrapper">
+            <dl class="result__list list-null">
+              <div class="result__left-wrapper">
+                <dt>5 КГ</dt>
+                <dd>снижение веса</dd>
+              </div>
+              <div class="result__right-wrapper">
+                <dt>60 ДНЕЙ</dt>
+                <dd>затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="result__cost-text">Затраты на питание: 15 000 РУБ.</p>
+          </div>
           <div class="result__slider slider">
             <img
               class="slider__img"
@@ -157,11 +161,11 @@
           <div class="contacts__text-container">
             <p class="contacts__promo">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              <span>ул. Большая Конюшенная, д. 19/8 </span><span class="address-devider">Санкт-Петербург</span>
             </address>
           </div>
           <div class="contacts__map-container">
-            <iframe
+            <iframe class="contacts__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6722.859820366972!2d30.31453487314461!3d59.936818373465236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691352178848!5m2!1sru!2s"
               width="320"
               height="362"

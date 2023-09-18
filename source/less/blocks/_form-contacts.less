@@ -1,5 +1,5 @@
 .form__contacts-user-fieldset {
-  padding: 0 20px 11px;
+  padding: 0 20px 24px;
   margin: 0;
   border: none;
 }
@@ -17,7 +17,6 @@
 .form__contacts-user-input {
   .form-text();
   padding: 14px 15px 13px;
-  margin-bottom: 14px;
   border: 1px @border-gray solid;
   width: 100%;
 
@@ -29,4 +28,32 @@
 .form__contacts-user-item {
   display: flex;
   align-items: baseline;
+}
+
+.form__contacts-user-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__contacts-user-fieldset {
+    padding: 0 70px;
+  }
+
+  .legend-contacts {
+    padding: 0;
+    margin-bottom: 76px;
+  }
+
+  .form__contacts-user-input {
+    .form-text();
+    padding: 11px 20px;
+  }
+
+  .form__contacts-user-list {
+    margin-bottom: 65px;
+  }
+
+  .form__contacts-user-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }

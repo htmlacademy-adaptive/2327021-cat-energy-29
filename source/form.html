@@ -12,30 +12,32 @@
     <div class="page-wrapper">
       <header class="main-header">
         <div class="header-wrapper">
-          <a href="index.html" class="main-header__logo logo">
-            <img
-              class="logo__logo-image"
-              src="./img/icons/main-logo.svg"
-              alt="логотип"
-            />
-            <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
-              <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
-            </svg>
-          </a>
+          <div class="header-wrapper-basic">
+            <a href="index.html" class="main-header__logo logo">
+              <img
+                class="logo__logo-image"
+                src="./img/icons/main-logo.svg"
+                alt="логотип"
+              />
+              <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
+                <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
+              </svg>
+            </a>
+              <button class="header-toggle" type="button">
+                <span class="visually-hidden">открыть меню сайта</span>
+              </button>
+          </div>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">открыть меню сайта</span>
-            </button>
-            <div class="main-nav__menu">
+            <div class="main-nav__menu-wrapper">
               <ul class="main-nav__list list-null">
                 <li class="main-nav__item">
-                  <a href="index.html" class="main-nav__link main-nav__link--current">главная</a>
+                  <a href="index.html" class="main-nav__link">главная</a>
                 </li>
                 <li class="main-nav__item">
                   <a href="catalog.html" class="main-nav__link">каталог продукции</a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="#no-scroll" class="main-nav__link">подбор программы</a>
+                  <a href="#no-scroll" class="main-nav__link main-nav__link--current">подбор программы</a>
                 </li>
               </ul>
             </div>
@@ -44,10 +46,12 @@
       </header>
 
       <main class="main-container">
-        <section class="filters">
-          <h1 class="filters__title">Подбор программы</h1>
-          <p class="filters__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class="filters__form form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="main-form">
+          <header class="main-form__header">
+            <h1 class="main-form-header__title">Подбор программы</h1>
+            <p class="main-form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          </header>
+          <form class="main-form__form form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__meta-container">
               <fieldset class="form__meta-fieldset">
                 <ul class="form__meta-list list-null">
@@ -161,11 +165,11 @@
           <div class="contacts__text-container contacts-color-wrapper">
             <p class="contacts__promo">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              <span>ул. Большая Конюшенная, д. 19/8 </span><span class="address-devider">Санкт-Петербург</span>
             </address>
           </div>
           <div class="contacts__map-container">
-            <iframe
+            <iframe class="contacts__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6722.859820366972!2d30.31453487314461!3d59.936818373465236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691352178848!5m2!1sru!2s"
               width="320"
               height="362"

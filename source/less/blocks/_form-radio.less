@@ -9,8 +9,29 @@
   .form-text();
 }
 
-.form__radio-item {
+.form__radio-item:not(:last-child) {
   margin-bottom: 13px;
+}
+
+.form__radio-label {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+}
+
+@media (min-width: @tablet-width) {
+  .form__radio-fieldset {
+    padding: 0 70px;
+    border-bottom: none;
+  }
+
+  .form__radio-list {
+    padding: 22px 20px 19px;
+    border: 1px @input-gray solid;
+    margin-bottom: 75px;
+  }
+
+  .form__radio-control-label {
+    font-size: 20px;
+    line-height: normal;
+  }
 }

@@ -46,3 +46,34 @@
 .social-icon {
   fill: @social-gray;
 }
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+    background-color: @light-gray;
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+  }
+
+  .footer hr {
+    display: none;
+    margin-bottom: 0;
+  }
+
+  .footer__social-list {
+    margin-bottom: 0;
+  }
+
+  .footer__academy-container {
+    display: flex;
+    width: 168px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

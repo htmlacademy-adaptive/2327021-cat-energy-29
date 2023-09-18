@@ -18,15 +18,6 @@
   }
 }
 
-.sub-catalog__card-title {
-  .title();
-  font-size: 16px;
-  line-height: 16px;
-  .text-null();
-  text-transform: uppercase;
-  margin-bottom: 13px;
-}
-
 .sub-catalog__list {
   max-width: 320px;
   padding: 0 20px;
@@ -35,7 +26,16 @@
 .sub-catalog__item:not(:last-child) {
   padding-top: 13px;
   padding-bottom: 19px;
-  border-bottom: 1px @hr-gray solid;
+  border-bottom: 1px @border-gray solid;
+}
+
+.sub-catalog__card-title {
+  .title();
+  font-size: 16px;
+  line-height: 16px;
+  .text-null();
+  text-transform: uppercase;
+  margin-bottom: 13px;
 }
 
 .sub-catalog__item p {
@@ -56,14 +56,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  size: 280px 290px;
+  min-width: 280px;
+  min-height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-cat.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.contacts-color-wrapper {
-  background-color: @light-gray;
 }
 
 .sub-catalog__bonus-text {
@@ -73,11 +70,108 @@
   color: @white;
   max-width: 165px;
   text-align: center;
+}
 
+.sub-catalog__bonus-wrapper span {
   &::before {
     content: "";
-    //<svg class="icon">
-    //<use xlink:href="#icon_gift"></use>
-    //</svg>
+    display: block;
+    background-image: url("../img/icons/icon_gift.svg");
+    background-size: 78px 80px;
+    width: 78px;
+    height: 80px;
+    background-repeat: no-repeat;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .sub-catalog {
+    padding: 68px 30px 76px;
+  }
+
+  .sub-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    margin-bottom: 80px;
+
+    &::after {
+      content: "";
+      display: none;
+      height: 1px;
+      background-color: @hr-gray;
+      margin-top: 36px;
+    }
+  }
+
+  .sub-catalog__list {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .sub-catalog__item:not(:last-child) {
+    padding: 26px 28px 38px;
+    border: 1px @border-gray solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sub-catalog__card-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  .sub-catalog__button {
+    margin-top: 25px;
+    grid-column: 1/3;
+  }
+
+  .sub-catalog__item p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sub-catalog__text-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sub-catalog__descripion {
+    margin-right: 50px;
+  }
+
+  .sub-catalog__bonus-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 708px;
+    min-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-cat.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 69px;
+    padding: 10px 77px;
+  }
+
+  .sub-catalog__bonus-text {
+    text-align: left;
+  }
+
+  .sub-catalog__bonus-wrapper span {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/icons/icon_gift.svg");
+      background-size: 80px 82px;
+      width: 80px;
+      height: 82px;
+      background-repeat: no-repeat;;
+      margin-right: 264px;
+      margin-bottom: 0;
+    }
   }
 }
