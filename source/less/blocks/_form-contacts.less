@@ -1,0 +1,79 @@
+.form__contacts-user-fieldset {
+  padding: 0 20px 24px;
+  margin: 0;
+  border: none;
+}
+
+.legend-contacts {
+  padding: 26px 0 0;
+  margin-bottom: 35px;
+}
+
+.form__contacts-user-label {
+  .form-text();
+  margin-right: 13px;
+}
+
+.form__contacts-user-input {
+  .form-text();
+  padding: 14px 15px 13px;
+  border: 1px @border-gray solid;
+  width: 100%;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__contacts-user-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.form__contacts-user-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__contacts-user-fieldset {
+    padding: 0 70px;
+  }
+
+  .legend-contacts {
+    padding: 0;
+    margin-bottom: 76px;
+  }
+
+  .form__contacts-user-input {
+    .form-text();
+    padding: 11px 20px;
+  }
+
+  .form__contacts-user-list {
+    margin-bottom: 65px;
+  }
+
+  .form__contacts-user-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .form__contacts-user-fieldset {
+    padding: 0 110px;
+  }
+
+  .form__contacts-user-list {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 67px;
+  }
+
+  .form__contacts-user-item {
+    min-width: 570px;
+  }
+
+  .form__contacts-user-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

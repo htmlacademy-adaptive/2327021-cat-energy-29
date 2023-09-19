@@ -1,0 +1,56 @@
+.form__commit {
+  border: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.legend-commit {
+  padding: 0;
+  margin-bottom: 36px;
+}
+
+.form__textarea {
+  border: 1px @input-gray solid;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 23px;
+  .form-text();
+  padding: 14px 10px 10px 15px;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .form__commit {
+    padding: 0 70px;
+  }
+
+  .legend-commit {
+    margin-bottom: 87px;
+  }
+
+  .form__textarea {
+    margin-bottom: 53px;
+    padding: 11px 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .form__commit {
+    padding: 0 110px;
+  }
+
+  .legend-commit {
+    margin-bottom: 76px;
+  }
+
+  .form__textarea {
+    margin-bottom: 67px;
+    padding: 11px 20px;
+    line-height: 30px;
+  }
+}
