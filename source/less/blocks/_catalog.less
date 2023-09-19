@@ -32,10 +32,12 @@
   line-height: 20px;
   max-width: 78px;
   margin-bottom: 14px;
+  color: @secondary-black;
 }
 
 .card__button {
   margin-top: 13px;
+  min-width: 100%;
 }
 
 .card__info {
@@ -91,19 +93,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog {
+    padding: 40px 30px 0;
+  }
+
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
-    padding: 40px 30px 42px;
+    margin-bottom: 42px;
+    padding: 0;
     border-top: none;
     border-bottom: none;
   }
 
   .catalog__products-list {
-    padding: 0 30px;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    align-items: center;
   }
 
   .catalog__products-item {
@@ -111,6 +119,7 @@
     min-height: 511px;
     padding: 8px 37px 39px;
     border-bottom: none;
+    justify-self: center;
   }
 
   .card__wrapper {
@@ -165,11 +174,11 @@
   .card .secondary-button {
     background-color: @light-gray;
     color: @primary-black;
-    margin-top: 81px;
+    margin-top: 87px;
   }
 
   .card__info-wrapper {
-    min-width: 250px;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,5 +206,62 @@
     padding-top: 7px;
     padding-bottom: 9px;
     border-bottom: 1px @border-gray solid;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .catalog {
+    padding: 40px 110px 0;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .catalog__products-list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 62px;
+    align-items: center;
+  }
+
+  .catalog__products-item {
+    min-width: 245px;
+    min-height: 511px;
+    padding: 0 36px 40px;
+    border-bottom: none;
+    justify-self: center;
+  }
+
+  .card__wrapper {
+    gap: 46px;
+  }
+
+  .card__image-wrapper {
+    width: 172px;
+    min-height: 196px;
+  }
+
+  .card .card__title {
+    line-height: 21px;
+    margin-bottom: 21px;
+  }
+
+  .card .card__title-row {
+    &::before {
+      width: 60px;
+      height: 60px;
+      margin-top: 132px;
+      margin-bottom: 49px;
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+    }
   }
 }

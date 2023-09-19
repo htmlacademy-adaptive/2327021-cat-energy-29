@@ -52,50 +52,52 @@
             <p class="main-form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </header>
           <form class="main-form__form form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__meta-container">
-              <fieldset class="form__meta-fieldset">
-                <ul class="form__meta-list list-null">
-                  <li class="form__meta-item">
-                    <label class="form__meta-label" for="name">ИМЯ:*</label>
-                    <input class="form__meta-input" type="text" name="name" id="name" placeholder="барсик" required>
-                  </li>
-                  <li class="form__meta-item">
-                    <label class="form__meta-label" for="weight">Вес (кг):*</label>
-                    <input class="form__meta-input" type="number" name="weight" id="weight" placeholder="7" required>
-                  </li>
-                  <li class="form__meta-item">
-                    <label class="form__meta-label" for="age">Возраст (лет):</label>
-                    <input class="form__meta-input" type="number" name="age" id="age" placeholder="7" min="0" max="100" required>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form__radio-container">
-              <fieldset class="form__radio-fieldset">
-                <ul class="form__radio-list list-null">
-                  <li class="form__radio-item">
-                    <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" name="feed" value="weight-loss" checked>
-                    <span class="form__radio-control-mark"></span>
-                    <span class="form__radio-control-label">похудение</span>
-                    </label>
-                  </li>
-                  <li class="form__radio-item">
-                    <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" name="feed" value="weight-gain">
-                    <span class="form__radio-control-mark"></span>
-                    <span class="form__radio-control-label">Набор массы</span>
-                    </label>
-                  </li>
-                  <li class="form__radio-item">
-                    <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" name="feed" value="advice">
-                    <span class="form__radio-control-mark"></span>
-                    <span class="form__radio-control-label">Не знаю (Нужен ваш совет)</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+            <div class="form__meta-combine-container">
+              <div class="form__meta-container">
+                <fieldset class="form__meta-fieldset">
+                  <ul class="form__meta-list list-null">
+                    <li class="form__meta-item">
+                      <label class="form__meta-label" for="name">ИМЯ:*</label>
+                      <input class="form__meta-input" type="text" name="name" id="name" placeholder="барсик" required>
+                    </li>
+                    <li class="form__meta-item">
+                      <label class="form__meta-label" for="weight">Вес (кг):*</label>
+                      <input class="form__meta-input" type="number" name="weight" id="weight" placeholder="7" required>
+                    </li>
+                    <li class="form__meta-item">
+                      <label class="form__meta-label" for="age">Возраст (лет):</label>
+                      <input class="form__meta-input" type="number" name="age" id="age" placeholder="7" min="0" max="100" required>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="form__radio-container">
+                <fieldset class="form__radio-fieldset">
+                  <ul class="form__radio-list list-null">
+                    <li class="form__radio-item">
+                      <label class="form__radio-label">
+                      <input class="form__radio-input" type="radio" name="feed" value="weight-loss" checked>
+                      <span class="form__radio-control-mark"></span>
+                      <span class="form__radio-control-label">похудение</span>
+                      </label>
+                    </li>
+                    <li class="form__radio-item">
+                      <label class="form__radio-label">
+                      <input class="form__radio-input" type="radio" name="feed" value="weight-gain">
+                      <span class="form__radio-control-mark"></span>
+                      <span class="form__radio-control-label">Набор массы</span>
+                      </label>
+                    </li>
+                    <li class="form__radio-item">
+                      <label class="form__radio-label">
+                      <input class="form__radio-input" type="radio" name="feed" value="advice">
+                      <span class="form__radio-control-mark"></span>
+                      <span class="form__radio-control-label">Не знаю (Нужен ваш совет)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
             <div class="form__contacts-container">
               <fieldset class="form__contacts-user-fieldset">

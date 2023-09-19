@@ -72,7 +72,6 @@
 
   .hero__description {
     max-width: 70%;
-    text-transform: uppercase;
     .title();
     .text-null();
     margin-bottom: 21px;
@@ -102,5 +101,69 @@
     position: absolute;
     top: 29px;
     left: 90px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .hero__wrapper {
+    max-width: 1440px;
+    background-image: none;
+    padding: 58px 110px 0;
+  }
+
+  .hero__cat-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+  }
+
+  .hero__cat-decor {
+    min-width: 720px;
+    min-height: 694px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-cat-big.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    padding: 0;
+    background-size: 145%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .hero__link-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .hero__link {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 265px;
+    margin-left: 89px;
+  }
+
+  .hero__title {
+    padding-left: 89px;
+  }
+
+  .hero__description {
+    margin-bottom: 52px;
+    padding-left: 89px;
+  }
+
+  .hero__image {
+    min-width: 552px;
+    min-height: 499px;
+    position: absolute;
+    left: 448px;
+    bottom: 125px;
+  }
+
+  .hero__link-wrapper .button {
+    max-width: 244px;
+    min-height: 54px;
+    align-items: center;
+    display: flex;
   }
 }

@@ -1,6 +1,7 @@
 .form__additionally {
   border: none;
   padding: 0 20px;
+  margin: 0;
 }
 
 .legend-additionally {
@@ -32,8 +33,10 @@
 }
 
 .form__button {
+  min-height: 40px;
   margin-top: 21px;
   margin-bottom: 21px;
+  min-width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -75,6 +78,32 @@
     margin-bottom: 72px;
     margin-right: 64px;
     min-width: 282px;
+    min-height: 52px;
+    padding: 14px 45px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .form__additionally {
+    padding: 0 110px;
+  }
+
+  .form__checkbox-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 112px;
+  }
+
+  .form__button-container {
+    max-width: 1440px;
+    padding: 0 110px;
+  }
+
+  .form__button {
+    margin-top: 66px;
+    margin-bottom: 82px;
+    margin-right: 80px;
+    min-width: 570px;
     padding: 14px 45px;
   }
 }

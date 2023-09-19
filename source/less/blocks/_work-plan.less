@@ -35,7 +35,7 @@
 
 @media (min-width: @tablet-width) {
   .work-plan {
-    padding: 25px 30px 47px;
+    padding: 15px 30px 47px;
   }
 
   .work-plan__title {
@@ -54,6 +54,7 @@
     grid-template-columns: 230px 230px;
     column-gap: 187px;
     row-gap: 90px;
+    margin-bottom: 70px;
   }
 
   .work-plan__item {
@@ -67,5 +68,22 @@
       margin-bottom: 31px;
       flex-shrink: 0;
     }
+  }
+
+  .work-plan__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .work-plan {
+    padding: 0 110px;
+  }
+
+  .work-plan__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 0;
   }
 }
