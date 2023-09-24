@@ -5,10 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-cat-mobile@1x.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-cat-desctop@1x.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   background-repeat: no-repeat;
   background-size: 320px 302px;
   padding: 27px 5px 0 5px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-cat-desctop@2x.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    background-size: 320px 302px;
+  }
 }
 
 .hero__title {
@@ -116,12 +121,17 @@
   .hero__cat-decor {
     min-width: 720px;
     min-height: 694px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-cat-back-desctop@x1.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-cat-back-desctop@1x.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
     padding: 0;
     background-size: 145%;
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-cat-back-desctop@2x.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+      background-size: 145%;
+    }
   }
 
   .hero__link-wrapper {

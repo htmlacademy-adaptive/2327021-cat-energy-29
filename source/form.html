@@ -14,10 +14,11 @@
         <div class="header-wrapper">
           <div class="header-wrapper-basic">
             <a href="index.html" class="main-header__logo logo">
-              <img
-                class="logo__logo-image"
-                src="./img/icons/main-logo.svg"
-                alt="логотип">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/icons/main-logo-desctop.svg">
+                <source media="(min-width: 768px)" srcset="./img/icons/main-logo-tablet.svg">
+                <img class="logo__logo-image" width="33" height="38" src="./img/icons/main-logo.svg" alt="логотип" loading="lazy">
+              </picture>
               <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
                 <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
               </svg>
