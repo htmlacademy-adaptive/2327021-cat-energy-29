@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>Кэт энерджи</title>
-    <link rel="icon" href="/source/favicon.svg" />
+    <link rel="icon" href="/source/favicon.svg">
   </head>
 
   <body class="page__body">
@@ -17,8 +17,7 @@
               <img
                 class="logo__logo-image"
                 src="./img/icons/main-logo.svg"
-                alt="логотип"
-              />
+                alt="логотип">
               <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
                 <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
               </svg>
@@ -52,7 +51,20 @@
             <li class="catalog__products-item card">
               <div class="card__wrapper">
                 <div class="card__image-wrapper">
-                  <img src="./img/card-pro500chick.png" alt="фото товара" width="68" height="86" class="card__img">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                    srcset="./img/card-pro500chick-desctop@x1.png x1, card-pro500chick-desctop@x2.png x2"
+                    width="172" height="196">
+                    <source media="(min-width: 768px)"
+                    srcset="./img/card-pro500chick-tablet@x1.png x1, ./img/card-pro500chick-tablet@x2.png x2"
+                    width="168" height="200">
+                    <source media="(min-width: 768px)"
+                    srcset="./img/card-pro500chick-tablet@x1.png x1, ./img/card-pro500chick-tablet@x2.png x2"
+                    width="168" height="200">
+                    <img src="./img/card-pro500chick-mobile@x1.png"
+                    srcset="./img/card-pro500chick-mobile@x2.png x2"
+                    alt="фото товара" width="68" height="86" class="card__img" loading="lazy">
+                  </picture>
                 </div>
                 <div class="card__info-wrapper">
                   <h2 class="card__title">Cat Energy PRO 500 г</h2>
@@ -192,7 +204,7 @@
           </ul>
         </section>
         <section class="sub-catalog">
-          <h2 class="sub-catalog__title">Дополнительные товары</h3>
+          <h2 class="sub-catalog__title">Дополнительные товары</h2>
           <ul class="sub-catalog__list list-null">
             <li class="sub-catalog__item sub-catalog__item--1">
               <h2 class="sub-catalog__card-title">Сахарозаменитель</h2>
@@ -257,8 +269,7 @@
               src="./img/map-icon.png"
               width="57"
               height="53"
-              alt="точка местоположения на карте"
-            />
+              alt="точка местоположения на карте">
           </div>
         </section>
       </main>

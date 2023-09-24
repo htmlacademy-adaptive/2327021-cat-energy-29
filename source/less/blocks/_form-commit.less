@@ -7,6 +7,20 @@
 .legend-commit {
   padding: 0;
   margin-bottom: 36px;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 159px;
+    height: 2px;
+    background-color: @primary-green;
+    z-index: -1;
+    position: absolute;
+    top: 15px;
+    left: 141px;
+  }
 }
 
 .form__textarea {
@@ -30,6 +44,30 @@
 
   .legend-commit {
     margin-bottom: 87px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: @primary-green;
+      z-index: -1;
+      position: absolute;
+      top: 21px;
+      left: -70px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 476px;
+      height: 2px;
+      background-color: @primary-green;
+      z-index: -1;
+      position: absolute;
+      top: 21px;
+      left: 221px;
+    }
   }
 
   .form__textarea {
@@ -46,6 +84,18 @@
 
   .legend-commit {
     margin-bottom: 76px;
+
+    &::before {
+      width: 70px;
+      top: 21px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 1108px;
+      top: 21px;
+      left: 222px;
+    }
   }
 
   .form__textarea {
