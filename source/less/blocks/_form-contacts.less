@@ -5,8 +5,22 @@
 }
 
 .legend-contacts {
-  padding: 26px 0 0;
+  padding: 26px 20px 0 0;
   margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 93px;
+    height: 2px;
+    background-color: @primary-green;
+    z-index: -1;
+    position: absolute;
+    top: 42px;
+    right: -20px;
+  }
 }
 
 .form__contacts-user-label {
@@ -23,6 +37,39 @@
   &::placeholder {
     opacity: 1;
   }
+
+  &:hover {
+    border: 1px @border-gray solid;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px @dark-gray solid;
+  }
+
+  //&:invalid {
+  //  outline: none;
+  //  border: 2px #ff8282 solid;
+  //}
+}
+
+.form__contacts-user-input[type="number"] {
+  appearance: textfield;
+  background-image: url("../img/icons/icon-phone.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.form__contacts-user-input[type="email"] {
+  background-image: url("../img/icons/icon-mail.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.form__contacts-user-input::-webkit-outer-spin-button .form__contacts-user-input::-webkit-inner-spin-button {
+  appearance: none;
 }
 
 .form__contacts-user-item {
@@ -42,6 +89,30 @@
   .legend-contacts {
     padding: 0;
     margin-bottom: 76px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: @primary-green;
+      z-index: -1;
+      position: absolute;
+      top: 21px;
+      left: -70px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 146px;
+      height: 2px;
+      background-color: @primary-green;
+      z-index: -1;
+      position: absolute;
+      top: 21px;
+      right: -185px;
+    }
   }
 
   .form__contacts-user-input {
@@ -59,6 +130,23 @@
 }
 
 @media (min-width: @desctop-width) {
+  .legend-contacts {
+    padding: 0;
+    margin-bottom: 76px;
+
+    &::before {
+      width: 70px;
+      top: 21px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 778px;
+      top: 21px;
+      left: 552px;
+    }
+  }
+
   .form__contacts-user-fieldset {
     padding: 0 110px;
   }

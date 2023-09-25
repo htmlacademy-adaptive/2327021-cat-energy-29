@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>Кэт энерджи</title>
-    <link rel="icon" href="/source/favicon.svg" />
+    <link rel="icon" href="/source/favicon.svg">
   </head>
 
   <body class="page__body">
@@ -14,11 +14,11 @@
         <div class="header-wrapper">
           <div class="header-wrapper-basic">
             <a href="index.html" class="main-header__logo logo">
-              <img
-                class="logo__logo-image"
-                src="./img/icons/main-logo.svg"
-                alt="логотип"
-              />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/icons/main-logo-desctop.svg">
+                <source media="(min-width: 768px)" srcset="./img/icons/main-logo-tablet.svg">
+                <img class="logo__logo-image" width="33" height="38" src="./img/icons/main-logo.svg" alt="логотип" loading="lazy">
+              </picture>
               <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
                 <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
               </svg>
@@ -27,7 +27,7 @@
                 <span class="visually-hidden">открыть меню сайта</span>
               </button>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
             <div class="main-nav__menu-wrapper">
               <ul class="main-nav__list list-null">
                 <li class="main-nav__item">
@@ -48,8 +48,8 @@
       <main class="main-container">
         <section class="main-form">
           <header class="main-form__header">
-            <h1 class="main-form-header__title">Подбор программы</h1>
-            <p class="main-form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <h1 class="main-form__header-title">Подбор программы</h1>
+            <p class="main-form__header-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </header>
           <form class="main-form__form form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__meta-combine-container">
@@ -117,7 +117,10 @@
             <div class="form__commit-container">
               <fieldset class="form__commit">
                 <legend class="form__legend legend-commit">Комментарий</legend>
-                <textarea class="form__textarea" name="form__textarea" id="textarea" type="text" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+                <label class="form__commit-label">
+                  <span class="visually-hidden">оставьте комментарий в специальном текстовом поле.</span>
+                <textarea class="form__textarea" name="form__textarea" id="textarea" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+                </label>
               </fieldset>
             </div>
             <div class="form__additionally-container">
@@ -171,7 +174,7 @@
             </address>
           </div>
           <div class="contacts__map-container">
-            <iframe class="contacts__map"
+            <iframe class="contacts__iframe-map contacts__iframe-map--nojs"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6722.859820366972!2d30.31453487314461!3d59.936818373465236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691352178848!5m2!1sru!2s"
               width="320"
               height="362"
@@ -180,12 +183,12 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <img
-              src="./img/map-icon.png"
-              width="57"
-              height="53"
-              alt="точка местоположения на карте"
-            />
+            <picture>
+              <source media="(min-width: 1440px)" srcset="../img/map-icon-tablet.png" width="113" height="106">
+              <source media="(min-width: 768px)" srcset="../img/map-icon-tablet.png" width="113" height="106">
+              <img class="contacts__map-point contacts__map-point--nojs" src="../img/map-icon.png" width="57" height="53"
+                alt="точка местоположения на карте">
+            </picture>
           </div>
         </section>
       </main>
@@ -194,7 +197,7 @@
         <div class="footer__wrapper">
           <h2 class="visually-hidden">логотип компании.</h2>
           <a href="index.html" class="footer__page-link">
-            <svg class="footer__logo logo-text" width="128" height="24">
+            <svg class="footer__logo footer__logo-text logo-text" width="128" height="24">
               <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
             </svg>
           </a>
@@ -237,5 +240,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
