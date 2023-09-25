@@ -27,7 +27,7 @@
                 <span class="visually-hidden">открыть меню сайта</span>
               </button>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
             <div class="main-nav__menu-wrapper">
               <ul class="main-nav__list list-null">
                 <li class="main-nav__item">
@@ -53,6 +53,15 @@
               <div class="card__wrapper">
                 <div class="card__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./img/card-pro500chick-desctop@1x.webp 1x, ./img/card-pro500chick-desctop@2x.webp 2x"
+                    width="172" height="196">
+                    <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/card-pro500chick-tablet@1x.webp 1x, ./img/card-pro500chick-tablet@2x.webp 2x"
+                    width="168" height="200">
+                    <source type="image/webp"
+                    srcset="./img/card-pro500chick-mobile@1x.webp 1x, ./img/card-pro500chick-mobile@2x.webp 2x"
+                    width="68" height="86">
                     <source media="(min-width: 1440px)"
                     srcset="./img/card-pro500chick-desctop@1x.png 1x, ./img/card-pro500chick-desctop@2x.png 2x"
                     width="172" height="196">
@@ -380,5 +389,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

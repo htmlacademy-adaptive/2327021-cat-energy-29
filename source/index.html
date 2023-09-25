@@ -146,19 +146,46 @@
               </div>
             </div>
             <div class="result__slider slider">
-              <img
-                class="slider__img"
-                src="./img/cat-fat.png"
-                width="280"
-                height="256"
-                alt="внешняя трансформация">
-              <img
-                class="slider__img"
-                src="./img/cat-thin.png"
-                width="280"
-                height="256"
-                alt="кота">
-              <button class="slider__toggle" type="button"></button>
+              <span class="visually-hidden">слайдер с фото кота дои после программы питания.</span>
+              <div class="img-before-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/index-fatcat-tablet@1x.webp 1x, ./img/index-fatcat-tablet@2x.webp 2x"
+                  width="560" height="512">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-fatcat-tablet@1x.webp 1x, ./img/index-fatcat-tablet@2x.webp 2x"
+                  width="560" height="512">
+                  <source type="image/webp" srcset="./img/index-fatcat-mobile@1x.webp 1x, ./img/index-fatcat-mobile@2x.webp 2x"
+                  width="280" height="256">
+                  <source media="(min-width: 1440px)" srcset="./img/index-fatcat-tablet@1x.png 1x, ./img/index-fatcat-tablet@2x.png 2x"
+                  width="560" height="512">
+                  <source media="(min-width: 768px)" srcset="./img/index-fatcat-tablet@1x.png 1x, ./img/index-fatcat-tablet@2x.png 2x"
+                  width="560" height="512">
+                  <img class="slider__img-before" src="./img/index-fatcat-mobile@1x.png"
+                  srcset="./img/index-fatcat-mobile@2x.png 2x" width="280" height="256" width="280" height="256" alt="внешняя трансформация">
+                </picture>
+              </div>
+              <div class="img-after-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/index-slimcat-tablet@1x.webp 1x, ./img/index-slimcat-tablet@2x.webp 2x"
+                  width="560" height="512">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-slimcat-tablet@1x.webp 1x, ./img/index-slimcat-tablet@2x.webp 2x"
+                  width="560" height="512">
+                  <source type="image/webp" srcset="./img/index-slimcat-mobile@1x.webp 1x, ./img/index-slimcat-mobile@2x.webp 2x"
+                  width="280" height="256">
+                  <source media="(min-width: 1440px)" srcset="./img/index-slimcat-tablet@1x.png 1x, ./img/index-slimcat-tablet@2x.png 2x"
+                  width="560" height="512">
+                  <source media="(min-width: 768px)" srcset="./img/index-slimcat-tablet@1x.png 1x, ./img/index-slimcat-tablet@2x.png 2x"
+                  width="560" height="512">
+                  <img class="slider__img-after" src="./img/index-slimcat-mobile@1x.png"
+                  srcset="./img/index-slimcat-mobile@2x.png 2x" width="280" height="256" alt="кота">
+                </picture>
+              </div>
+              <div class="slider__devider-wrapper">
+                <span class="visually-hidden">кнопка перемещения слайдера.</span>
+                <button class="slider__slider-devider-toggle" type="button">
+                  <svg class="slider__toggle-icons" width="40" height="40"></svg>
+                </button>
+                <div class="divider-line"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -227,7 +254,8 @@
           <a href="https://htmlacademy.ru" class="footer__link">
             <div class="footer__academy-container">
               <span class="visually-hidden"
-                  >ссылка на разработчика сайта, компанию HTML Academy.</span>
+                  >ссылка на разработчика сайта, компанию HTML Academy.</span
+                >
               <p class="footer__academy-text">HTML Academy</p>
               <svg class="icon academy-logo" width="27" height="34">
               <use xlink:href="./img/icons/sprite.svg#academy-logo"></use></svg>
@@ -236,5 +264,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

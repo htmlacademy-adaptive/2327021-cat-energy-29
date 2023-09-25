@@ -47,14 +47,25 @@
     border: 2px @dark-gray solid;
   }
 
-  &:invalid {
-    outline: none;
-    border: 2px #ff8282 solid;
-  }
+  //&:invalid {
+  //  outline: none;
+  //  border: 2px #ff8282 solid;
+  //}
 }
 
 .form__contacts-user-input[type="number"] {
   appearance: textfield;
+  background-image: url("../img/icons/icon-phone.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.form__contacts-user-input[type="email"] {
+  background-image: url("../img/icons/icon-mail.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 
 .form__contacts-user-input::-webkit-outer-spin-button .form__contacts-user-input::-webkit-inner-spin-button {
