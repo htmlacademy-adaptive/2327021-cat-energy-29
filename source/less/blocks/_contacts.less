@@ -1,3 +1,9 @@
+.contacts {
+  @media (min-width: @desctop-width) {
+    position: relative;
+  }
+}
+
 .contacts__text-container {
   display: flex;
   padding: 26px 20px;
@@ -31,6 +37,7 @@
 }
 
 .contacts__map-point {
+  display: none;
   position: absolute;
   top: 165px;
   left: 162px;
@@ -49,10 +56,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-.contacts__map-point--nojs {
-  //display: none;
 }
 
 .contacts__iframe-map--nojs {
