@@ -71,6 +71,8 @@
 }
 
 .choice-link {
+  display: flex;
+  align-items: center;
   .link-null();
   align-self: flex-start;
   color: @primary-black;
@@ -81,7 +83,30 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+.choice-link:hover .decoration-arrow {
+  background-image: url("../img/icons/icon-arrow-big.svg");
+}
+
+.decoration-arrow {
+  display: block;
+  background-image: url("../img/icons/icon-arrow.svg");
+  background-size: 32px 10px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 25px;
+  }
+}
+
 
 .program-choice hr {
   .hr();
@@ -151,6 +176,7 @@
     margin-bottom: 10;
   }
 }
+
 
 @media (min-width: @desctop-width) {
   .program-choice {

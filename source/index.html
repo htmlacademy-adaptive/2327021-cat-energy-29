@@ -77,8 +77,7 @@
                 сбросить лишний вес.
               </p>
               <hr>
-              <a href="#no-scroll" class="choice-link"
-                >каталог slim<span class="decoration-arrow"></span
+              <a href="#no-scroll" class="choice-link"><span>каталог slim</span><span class="decoration-arrow"></span
               ></a>
             </li>
             <li class="program-choice__item program-choice__item--pro">
@@ -172,7 +171,7 @@
             </address>
           </div>
           <div class="contacts__map-container">
-            <iframe class="contacts__map"
+            <iframe class="contacts__iframe-map contacts__iframe-map--nojs"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6722.859820366972!2d30.31453487314461!3d59.936818373465236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691352178848!5m2!1sru!2s"
               width="320"
               height="362"
@@ -181,11 +180,12 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <img
-              src="./img/map-icon.png"
-              width="57"
-              height="53"
-              alt="точка местоположения на карте">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="../img/map-icon-tablet.png" width="113" height="106">
+              <source media="(min-width: 768px)" srcset="../img/map-icon-tablet.png" width="113" height="106">
+              <img class="contacts__map-point contacts__map-point--nojs" src="../img/map-icon.png" width="57" height="53"
+                alt="точка местоположения на карте">
+            </picture>
           </div>
         </section>
       </main>
@@ -194,7 +194,7 @@
         <div class="footer__wrapper">
           <h2 class="visually-hidden">логотип компании.</h2>
           <a href="index.html" class="footer__page-link">
-            <svg class="footer__logo logo-text" width="128" height="24">
+            <svg class="footer__logo footer__logo-text logo-text" width="128" height="24">
               <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
             </svg>
           </a>
@@ -227,8 +227,7 @@
           <a href="https://htmlacademy.ru" class="footer__link">
             <div class="footer__academy-container">
               <span class="visually-hidden"
-                  >ссылка на разработчика сайта, компанию HTML Academy.</span
-                >
+                  >ссылка на разработчика сайта, компанию HTML Academy.</span>
               <p class="footer__academy-text">HTML Academy</p>
               <svg class="icon academy-logo" width="27" height="34">
               <use xlink:href="./img/icons/sprite.svg#academy-logo"></use></svg>

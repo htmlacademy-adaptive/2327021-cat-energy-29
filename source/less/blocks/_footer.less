@@ -3,10 +3,21 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+  background-color: @light-gray;
 }
 
 .footer__logo {
   margin-bottom: 20px;
+}
+
+.footer__logo-text {
+  &:hover {
+    fill: @fckn-dark;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 .footer hr {
@@ -23,6 +34,10 @@
 .footer__link {
   display: block;
   .link-null();
+}
+
+.footer__link:hover .academy-logo {
+  fill: @primary-green;
 }
 
 .footer__academy-text {
@@ -45,6 +60,19 @@
 
 .social-icon {
   fill: @social-gray;
+
+  &:hover {
+    fill: @primary-green;
+  }
+
+  &:focus {
+    fill: @primary-green;
+  }
+
+  &:active {
+    fill: @primary-green;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -54,7 +82,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 55px 30px;
-    background-color: @light-gray;
   }
 
   .footer__logo {
@@ -75,5 +102,16 @@
     width: 168px;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 66px 110px;
+    background-color: @light-gray;
   }
 }
