@@ -14,6 +14,28 @@
   &::placeholder {
     opacity: 1;
   }
+
+  &:hover {
+    border: 1px @border-gray solid;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px @dark-gray solid;
+  }
+
+  //&:invalid {
+  //  outline: none;
+  //  border: 2px #ff8282 solid;
+  //}
+}
+
+.form__meta-input[type="number"] {
+  appearance: textfield;
+}
+
+.form__meta-input::-webkit-outer-spin-button .form__meta-input::-webkit-inner-spin-button {
+  appearance: none;
 }
 
 .form__meta-label {
